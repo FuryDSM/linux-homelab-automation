@@ -1,0 +1,3 @@
+# Replace these example paths in backup-paths.local.txt before use.
+/home/user/appdata
+/home/user/linux-homelab-automation/config

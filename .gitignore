@@ -1,0 +1,30 @@
+# Operator-specific settings and credentials
+.env
+.env.*
+*.local.json
+*.local.env
+*.local.txt
+secrets/
+credentials/
+# Runtime output and backups
+.state/
+reports/
+backups/
+*.log
+*.db
+*.sqlite*
+*.sql
+*.pem
+*.key
+*.p12
+*.zip
+*.tar*
+*.bin
+# Development artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+.DS_Store

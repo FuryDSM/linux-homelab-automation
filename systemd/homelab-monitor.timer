@@ -1,0 +1,10 @@
+[Unit]
+Description=Check homelab health every five minutes
+
+[Timer]
+OnBootSec=3min
+OnUnitInactiveSec=5min
+RandomizedDelaySec=20s
+
+[Install]
+WantedBy=timers.target

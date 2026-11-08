@@ -1,0 +1,10 @@
+{
+  "containers": [{"id": "dashboard", "name": "example-dashboard"}],
+  "disks": [{"id": "system-disk", "path": "/", "required_mount": false}],
+  "http": [{"id": "dashboard-http", "url": "http://127.0.0.1:8080/health", "expected_status": 200}],
+  "tls": [],
+  "review_package_updates": false,
+  "disk_warning_percent": 80,
+  "disk_critical_percent": 90,
+  "certificate_warning_days": 21
+}

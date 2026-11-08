@@ -1,0 +1,12 @@
+{
+  "mode": "synthetic demo",
+  "checks": [
+    {"id": "dashboard", "kind": "container", "status": "ok", "message": "Container is running; this does not prove application readiness."},
+    {"id": "system-disk", "kind": "disk", "status": "warning", "message": "Disk capacity warning.", "used_percent": 84.0},
+    {"id": "dashboard-http", "kind": "http", "status": "ok", "message": "Expected HTTP status received."},
+    {"id": "public-service-tls", "kind": "tls", "status": "ok", "message": "Certificate validation passed.", "certificate_days": 60}
+  ],
+  "updates": {"status": "disabled", "reboot_required": false},
+  "notifications": "disabled",
+  "note": "All entries are illustrative. No system or network checks were performed."
+}

@@ -1,0 +1,13 @@
+[Unit]
+Description=Read-only homelab health monitor
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/linux-homelab-automation
+ExecStart=/usr/bin/python3 %h/linux-homelab-automation/src/homelab_monitor.py --config %h/linux-homelab-automation/config/monitor.local.json
+UMask=0077
+Nice=10
+NoNewPrivileges=true
+PrivateTmp=true
+TimeoutStartSec=4min
